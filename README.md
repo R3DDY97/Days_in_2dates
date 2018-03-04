@@ -6,4 +6,4 @@ Small code to calculate days passed from birthday ...
 
 `$ cd bday2today`
 
-`$cd python3 gone_days.py`
+`$cd python3 days_lived.py`
