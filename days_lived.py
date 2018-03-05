@@ -2,16 +2,14 @@
 
 from datetime import date
 import os
-
 from input_days import two_dates
 
 try:
     BDAY, TODAY = two_dates()
 except (ValueError, TypeError):
-    os.system("clear||cls")
     print("\nInput Error ...Using Simba's Bday as default...")
     T = date.today()
-    BDAY, TODAY = [2017, 5, 20], [T.year, T.month, T.day]  # Y-M-D format .. for easy comparison
+    BDAY, TODAY = [2017, 5, 20], [T.year, T.month, T.day]  #Y-M-D -for easy date list comparison
 
 *TODAY_YM, TODAY_DAY = TODAY
 *BDAY_YM, BDAY_DAY = BDAY
@@ -59,4 +57,5 @@ def main():
 
 
 if __name__ == '__main__':
+    os.system("clear||cls")
     main()
