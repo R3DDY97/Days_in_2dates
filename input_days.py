@@ -8,18 +8,16 @@ def two_dates():
     today = [now.year, now.month, now.day]
     bday = []
     os.system("clear||cls")
-    YMD = input("\nEnter birthdate in YYYY-MM-DD format: ")
-    while True:
+    ymd = input("\nEnter birthdate in YYYY-MM-DD format: ")
+    # while True:
+    if ymd:
         try:
-            bday = [int(i) for i in YMD.split("-")]
+            bday = [int(i) for i in ymd.split("-")]
+            return bday, today
         except ValueError:
-            # print("\nInvalid input and to exit press CTRL+C\n or try once again\n\n")
             os.system("clear||cls")
             print("wrong date")
-        except KeyboardInterrupt:
-            os.sys.exit()
-        break
-    return bday, today
+    return None
 
 if __name__ == '__main__':
     two_dates()
