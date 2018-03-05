@@ -8,7 +8,7 @@ def two_dates():
     today = [now.year, now.month, now.day]
     bday = []
     os.system("clear||cls")
-    YMD = input("\nEnter birthdate in Y-M-D format: ")
+    YMD = input("\nEnter birthdate in YYYY-MM-DD format: ")
     while True:
         try:
             bday = [int(i) for i in YMD.split("-")]

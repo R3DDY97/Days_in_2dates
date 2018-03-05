@@ -61,7 +61,7 @@ def main():
     count_date = Bday_YM
     days_aged = Today_Day - Bday_Day
     print("\nNo of Days so far: {}\n".format(days_passed(days_aged, count_date)))
-    # return days_passed(days_aged, count_date)
+    return days_passed(days_aged, count_date)
 
 
 if __name__ == '__main__':
